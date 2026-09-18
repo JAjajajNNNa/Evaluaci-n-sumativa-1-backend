@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
 </head>
 <body>
-    <!-- Menú de navegación -->
     <nav>
         <ul>
+            <li><a href="{% url 'app1:index' %}">Inicio</a></li>
             <li><a href="{% url 'app1:vista1_app1' %}">Vista 1 App1</a></li>
             <li><a href="{% url 'app1:vista2_app1' %}">Vista 2 App1</a></li>
             <li><a href="{% url 'app2:vista1_app2' %}">Vista 1 App2</a></li>
@@ -16,13 +16,13 @@
         </ul>
     </nav>
 
-    <!-- Contenido específico de cada página -->
-    {% block content %}
-    {% endblock %}
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
 
-    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2023 Mi Proyecto</p>
+        <p>&copy; 2026 Mi Proyecto</p>
     </footer>
 </body>
 </html>
