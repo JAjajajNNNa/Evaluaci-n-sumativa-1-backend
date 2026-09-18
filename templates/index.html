@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Inicio - Mi Proyecto{% endblock %}
+
+{% block content %}
+<h1>Bienvenido a Mi Proyecto</h1>
+<p>Selecciona una aplicacion para ingresar:</p>
+<ul>
+    <li><a href="{% url 'app1:vista1_app1' %}">Entrar a App1</a></li>
+    <li><a href="{% url 'app2:vista1_app2' %}">Entrar a App2</a></li>
+</ul>
+{% endblock %}
